@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>Chest</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
+      integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+      integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="maintreasurebx">
+      <img src="images/chest_idle.gif" alt="" class="treasurebx" />
+      <div class="sliderouter">
+        <div class="slickslider">
+          <div><img src="images/ic/ic1.png" alt="" /></div>
+          <div><img src="images/ic/ic2.png" alt="" /></div>
+          <div><img src="images/ic/ic3.png" alt="" /></div>
+          <div><img src="images/ic/ic4.png" alt="" /></div>
+          <div><img src="images/ic/ic5.png" alt="" /></div>
+          <div><img src="images/ic/ic6.png" alt="" /></div>
+          <div><img src="images/ic/ic7.png" alt="" /></div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script>
+    function runcarousel() {
+      $(".slickslider").slick({
+        centerMode: true,
+        centerPadding: "60px",
+        slidesToShow: 2,
+        autoplay: false,
+        arrows: false,
+        cssEase: "ease-out",
+        easing: "linear",
+        infinite: true,
+        draggable: true,
+        autoplaySpeed: 800,
+      });
+    }
+  </script>
+
+  <script>
+    $(".maintreasurebx").click(function () {
+      $(".maintreasurebx").css("pointer-events", "none");
+      $(".treasurebx").attr("src", "images/chest_opening.gif");
+      setTimeout(() => {
+        $(".sliderouter").toggleClass("sliderouteranimated");
+        setTimeout(() => {
+          $(".slickslider").slick("slickPlay");
+        }, 600);
+      }, 700);
+      runcarousel();
+    });
+  </script>
+</html>

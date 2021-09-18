@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700");
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Google Sans";
+}
+
+/*Comman Css*/
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+}
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+}
+img {
+  display: block;
+}
+body {
+  font-size: 14px;
+  font-weight: normal;
+  font-family: "Google Sans";
+  color: #fff;
+  text-decoration: none;
+  scroll-behavior: smooth;
+  background: url("../images/BG.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.maintreasurebx {
+  position: relative;
+  max-width: 200px;
+  margin: auto;
+  top: 50vh;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.sliderouter {
+  position: absolute;
+  max-width: 100%;
+  overflow: hidden;
+  transform: scale(0);
+}
+.maintreasurebx img {
+  width: 200px;
+}
+.slickslider img {
+  width: 16px;
+  height: auto;
+}
+
+.sliderouteranimated {
+  animation: mymove 600ms linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes mymove {
+  0% {
+    top: 90px;
+    transform: scale(0);
+  }
+  100% {
+    top: 68px;
+    transform: scale(1);
+  }
+}
