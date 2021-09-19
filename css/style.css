@@ -31,6 +31,7 @@ body {
   background: url("../images/BG.png");
   background-repeat: no-repeat;
   background-size: cover;
+  min-height: 100vh;
 }
 .maintreasurebx {
   position: relative;
@@ -48,6 +49,10 @@ body {
 }
 .maintreasurebx img {
   width: 200px;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: -webkit-crisp-edges;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
 }
 .slickslider img {
   width: 16px;
@@ -58,14 +63,28 @@ body {
   animation: mymove 600ms linear;
   animation-fill-mode: forwards;
 }
-
+.slick-center{
+  transform: scale(1.5);
+  transition: center;
+}
+.slick-list, .slick-track{
+  overflow: visible;
+}
+.slick-track{
+  height: 60px;
+}
+.slick-slide{
+  display: flex !important;
+  align-items: center;
+  /* justify-content: center; */
+}
 @keyframes mymove {
   0% {
-    top: 90px;
+    top: 75px;
     transform: scale(0);
   }
   100% {
-    top: 68px;
+    top: 46px;
     transform: scale(1);
   }
 }
