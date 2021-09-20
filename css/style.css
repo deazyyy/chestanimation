@@ -46,6 +46,7 @@ body {
   max-width: 100%;
   overflow: hidden;
   transform: scale(0);
+  margin-left: -8px;
 }
 .maintreasurebx img {
   width: 200px;
@@ -57,15 +58,17 @@ body {
 .slickslider img {
   width: 16px;
   height: auto;
+  transition-delay: 0.1s;
+  transition: all 0.5s ease-in-out;
 }
 
 .sliderouteranimated {
   animation: mymove 600ms linear;
   animation-fill-mode: forwards;
 }
-.slick-center{
+.slick-center img{
   transform: scale(1.5);
-  transition: center;
+  /* transform-origin: center; */
 }
 .slick-list, .slick-track{
   overflow: visible;
