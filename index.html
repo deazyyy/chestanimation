@@ -3,14 +3,10 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-    />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <title>Chest</title>
+
+    <!-- for slick carousel -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
@@ -24,53 +20,18 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-    <link rel="stylesheet" href="css/style.css" />
+    <!-- <link rel="stylesheet" href="css/style.css" /> -->
+    <script src="js/treasure.js"></script>
   </head>
   <body>
-    <div class="maintreasurebx">
-      <img src="images/chest_idle.gif" alt="" class="treasurebx" />
-      <div class="sliderouter">
-        <div class="slickslider">
-          <div><img src="images/ic/ic1.png" alt="" /></div>
-          <div><img src="images/ic/ic2.png" alt="" /></div>
-          <div><img src="images/ic/ic3.png" alt="" /></div>
-          <div><img src="images/ic/ic4.png" alt="" /></div>
-          <div><img src="images/ic/ic5.png" alt="" /></div>
-          <div><img src="images/ic/ic6.png" alt="" /></div>
-          <div><img src="images/ic/ic7.png" alt="" /></div>
-        </div>
-      </div>
-    </div>
+    <div id="box"></div>
   </body>
 
   <script>
-    function runcarousel() {
-      $(".slickslider").slick({
-        centerMode: true,
-        centerPadding: "60px",
-        slidesToShow: 2,
-        autoplay: false,
-        arrows: false,
-        cssEase: "ease-out",
-        easing: "linear",
-        infinite: true,
-        draggable: true,
-        autoplaySpeed: 800,
-      });
-    }
+    document.getElementById("box").innerHTML = treasurebox("Var1")
+    startanimation()
   </script>
 
-  <script>
-    $(".maintreasurebx").click(function () {
-      $(".maintreasurebx").css("pointer-events", "none");
-      $(".treasurebx").attr("src", "images/chest_opening.gif");
-      setTimeout(() => {
-        $(".sliderouter").toggleClass("sliderouteranimated");
-        setTimeout(() => {
-          $(".slickslider").slick("slickPlay");
-        }, 600);
-      }, 700);
-      runcarousel();
-    });
-  </script>
+
+
 </html>
