@@ -16,6 +16,9 @@ function treasurebox(var1){
             <div class="sparkle">
                 x32
             </div>
+            <div class="sparklename">
+                Emerald Sword
+            </div>
         </div>
     </div>`
 }
@@ -26,7 +29,7 @@ function startanimation() {
         $(".maintreasurebx").css("pointer-events", "none");
         $(".treasurebx").attr("src", "images/chest_opening.gif");
         setTimeout(() => {
-          $(".sliderouter").toggleClass("sliderouteranimated");
+          $(".sliderouter").addClass("sliderouteranimated");
           setTimeout(() => {
             $(".slickslider").slick("slickPlay");
           }, 600);
@@ -35,6 +38,13 @@ function startanimation() {
       });
 }
 
+function resetanimation() {
+    $('.slickslider').slick('unslick');
+    $(".maintreasurebx").css("pointer-events", "auto");
+    $(".treasurebx").attr("src", "images/chest_idle.gif");
+    $(".sliderouter").removeClass("sliderouteranimated");
+    startanimation()
+}
 function runcarousel() {
     $(".slickslider").slick({
       centerMode: true,
@@ -86,8 +96,10 @@ body {
   color: #fff;
   text-decoration: none;
   scroll-behavior: smooth;
-  background: url("../images/BG.png");
-  background-repeat: no-repeat;
+  background: url(images/BG.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
   min-height: 100vh;
   image-rendering: -moz-crisp-edges;
@@ -109,6 +121,7 @@ body {
   overflow: hidden;
   transform: scale(0);
   margin-left: -8px;
+  height: 130px;
 }
 .maintreasurebx img {
   width: 200px;
@@ -143,17 +156,26 @@ body {
   align-items: center;
   /* justify-content: center; */
 }
-
+.sparklename{
+    color: #fff;
+    text-align: center;
+    margin: -13px 0 0px;
+    position: relative;
+    left: 7px;
+    top: 40px;
+    font-weight: bold;
+    font-size: 14px;
+}
 .sparkle{
     font-family: "Google Sans";
-  color:#49cc2e;
-  text-align: center;
-  margin: -13px 0 0px;
-  position: relative;
-  left: 7px;
-  top: -17px;
-  font-weight: bold;
-  font-size: 14px;
+    color:#49cc2e;
+    text-align: center;
+    margin: -13px 0 0px;
+    position: relative;
+    left: 7px;
+    top: -17px;
+    font-weight: bold;
+    font-size: 14px;
 }
 @keyframes mymove {
   0% {
