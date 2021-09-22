@@ -33,7 +33,7 @@ function startanimation() {
           setTimeout(() => {
             $(".slickslider").slick("slickPlay");
           }, 600);
-        }, 700);
+        }, 1200);
         runcarousel();
       });
 }
