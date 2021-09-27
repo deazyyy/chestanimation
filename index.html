@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html>
   <head>
+
+    <!-- try url
+    http://127.0.0.1:5501/?items=[1,2,4]&amounts=[31,16,13]&skin=20&location=2&weather=55&time=234 -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>Chest</title>
-
+    <link rel="stylesheet" href="css/style.css">
     <!-- for slick carousel -->
     <link
       rel="stylesheet"
@@ -23,6 +26,9 @@
     <!-- <link rel="stylesheet" href="css/style.css" /> -->
     <script src="js/treasure.js"></script>
   </head>
+
+  <style>
+  </style>
   <body>
     <div id="box"></div>
     <!-- Call this function to reset the animation by appying it on button
@@ -30,7 +36,11 @@
   </body>
 
   <script>
-    document.getElementById("box").innerHTML = treasurebox("Var1")
+    let url =  window.location.href;
+    let params = (new URL(url)).searchParams;
+    console.log( params.get('location'))
+    // console.log( params.get('location'))
+    document.getElementById("box").innerHTML = treasurebox(params,"Var1")
     startanimation()
   </script>
 
