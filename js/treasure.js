@@ -17,8 +17,8 @@ function treasurebox(params, var1) {
   let itemHtml="";
   for(var i =0;i<itemList.length;i++){
     itemHtml+=`
-      <div data-times="${itemDB[itemList[i]-1].multiplier}" data-name="${itemDB[itemList[i]-1].name}">
-        <img src="images/ic/${itemDB[itemList[i]-1].imgName}.png" alt="" />
+      <div data-times="${itemDB[itemList[i]].rarity}" data-name="${itemDB[itemList[i]].strings[0].name}">
+        <div class="icon-mini item-${itemList[i]}"></div>
       </div>
     `
   }
@@ -26,21 +26,20 @@ function treasurebox(params, var1) {
   return `
     <div class="herobox">
       <div class="sky-gradient sky-gradient-${params.get('time')}"></div>
-     <img src="images/cloud${params.get('weather')}.png" alt="" class="clouds" />
-     <img src="images/dusk.png" alt="" class="dusk" />
-      <img src="images/foreground.png" alt="" class="foreground" />
+     <img src="img/cloud${params.get('weather')}.png" alt="" class="clouds" />
+     <img src="img/dusk.png" alt="" class="dusk" />
+      <img src="img/foreground.png" alt="" class="foreground" />
       <div class="maintreasurebx">
-    <img src="images/chest_idle.gif" alt="" class="treasurebx" />
+    <img src="img/chest_idle.gif" alt="" class="treasurebx" />
         <div class="sliderouter">
             <div class="slickslider">
                 ${itemHtml}
             </div>
             <div class="sparkle">
-                
-                <div class="content"><span> x32</span></div>
+                <div class="content"><span>x${itemDB[itemList[0]].rarity}</span></div>
             </div>
             <div class="sparklename">
-               <div class="content"><span> Emerald</span></div>
+               <div class="content"><span>${itemDB[itemList[0]].strings[0].name}</span></div>
             </div>
         </div>
     </div></div>`;
@@ -49,7 +48,7 @@ function treasurebox(params, var1) {
 function startanimation() {
   $(".maintreasurebx").click(function () {
     $(".maintreasurebx").css("pointer-events", "none");
-    $(".treasurebx").attr("src", "images/chest_opening.gif");
+    $(".treasurebx").attr("src", "img/chest_opening.gif");
     setTimeout(() => {
       $(".sliderouter").addClass("sliderouteranimated");
       setTimeout(() => {
@@ -62,7 +61,7 @@ function startanimation() {
     "afterChange",
     function (event, slick, currentSlide, nextSlide) {
       $(".sparkle .content").hide();
-      $(".sparkle .content").empty().append($(".slick-center").attr("data-times")).fadeIn(300);
+      $(".sparkle .content").empty().append("x"+$(".slick-center").attr("data-times")).fadeIn(300);
       $(".sparklename .content").hide();
       $(".sparklename .content").empty().append($(".slick-center").attr("data-name")).fadeIn(300);
     }
@@ -72,7 +71,7 @@ function startanimation() {
 function resetanimation() {
   $(".slickslider").slick("unslick");
   $(".maintreasurebx").css("pointer-events", "auto");
-  $(".treasurebx").attr("src", "images/chest_idle.gif");
+  $(".treasurebx").attr("src", "img/chest_idle.gif");
   $(".sliderouter").removeClass("sliderouteranimated");
   startanimation();
 }

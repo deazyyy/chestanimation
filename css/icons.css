@@ -1,0 +1,697 @@
+.icon-mini {
+    width: 16px;
+    height: 16px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: -webkit-crisp-edges;
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+}
+
+.icon {
+    width: 32px;
+    height: 32px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: -webkit-crisp-edges;
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+}
+
+
+.stat-atk {
+    background-image: url('../img/stats/ATK.png');
+}
+.stat-def {
+    background-image: url('../img/stats/DEF.png');
+}
+.stat-htp {
+    background-image: url('../img/stats/HTP.png');
+}
+.stat-str {
+    background-image: url('../img/stats/STR.png');
+}
+.stat-spd {
+    background-image: url('../img/stats/SPD.png');
+}
+.stat-vsn {
+    background-image: url('../img/stats/VSN.png');
+}
+.stat-wgt {
+    background-image: url('../img/stats/WGT.png');
+}
+.stat-int {
+    background-image: url('../img/stats/INT.png');
+}
+.stat-rng {
+    background-image: url('../img/stats/RNG.png');
+}
+.stat-xgp {
+    background-image: url('../img/stats/XGP.png');
+}
+.skill-cook {
+    background-image: url('../img/skills/cooking.png');
+}
+.skill-fish {
+    background-image: url('../img/skills/fishing.png');
+}
+.skill-farm {
+    background-image: url('../img/skills/farming.png');
+}
+.skill-mine {
+    background-image: url('../img/skills/mining.png');
+}
+.skill-wood {
+    background-image: url('../img/skills/woodworking.png');
+}
+.skill-thief {
+    background-image: url('../img/skills/thieving.png');
+}
+.skill-sneak {
+    background-image: url('../img/skills/sneaking.png');
+}
+.skill-lock {
+    background-image: url('../img/skills/lockpicking.png');
+}
+.skill-charisma {
+    background-image: url('../img/skills/charisma.png');
+}
+.skill-magic {
+    background-image: url('../img/skills/magic.png');
+}
+.skill-path {
+    background-image: url('../img/skills/pathfinding.png');
+}
+.skill-archery {
+    background-image: url('../img/skills/archery.png');
+}
+.skill-crafting {
+    background-image: url('../img/skills/crafting.png');
+}
+.skill-construction {
+    background-image: url('../img/skills/construction.png');
+}
+.skill-taming {
+    background-image: url('../img/skills/taming.png');
+}
+.icon-mini {
+    display: inline-block;
+}
+
+.item-777 {
+    background-image: url('../img/helm_frog_hat.png');
+}
+.item-1 {
+    background-image: url('../img/loot_legendary_loot_crate.png');
+}
+.item-2 {
+    background-image: url('../img/amulet_merchants_enchanted_amulet.png');
+}
+.item-3 {
+    background-image: url('../img/accessory_merchants_enchanted_bag.png');
+}
+.item-4 {
+    background-image: url('../img/accessory_merchants_enchanted_bangle.png');
+}
+.item-5 {
+    background-image: url('../img/boots_merchants_enchanted_boots.png');
+}
+.item-6 {
+    background-image: url('../img/accessory_merchants_enchanted_cloak.png');
+}
+.item-7 {
+    background-image: url('../img/consumable_merchants_enchanted_cologne.png');
+}
+.item-8 {
+    background-image: url('../img/weapon_merchants_enchanted_dagger.png');
+}
+.item-9 {
+    background-image: url('../img/chest_merchants_enchanted_doublet.png');
+}
+.item-10 {
+    background-image: url('../img/gloves_merchants_enchanted_gloves.png');
+}
+.item-11 {
+    background-image: url('../img/helm_merchants_enchanted_hat.png');
+}
+.item-12 {
+    background-image: url('../img/legs_merchants_enchanted_knickers.png');
+}
+.item-13 {
+    background-image: url('../img/consumable_merchants_enchanted_potion.png');
+}
+.item-14 {
+    background-image: url('../img/ring_merchants_enchanted_ring.png');
+}
+.item-15 {
+    background-image: url('../img/shield_merchants_enchanted_shield.png');
+}
+.item-16 {
+    background-image: url('../img/charm_merchants_enchanted_token.png');
+}
+.item-17 {
+    background-image: url('../img/charm_peps_token.png');
+}
+.item-18 {
+    background-image: url('../img/loot_rare_loot_crate.png');
+}
+.item-19 {
+    background-image: url('../img/loot_uncommon_loot_crate.png');
+}
+.item-20 {
+    background-image: url('../img/boots_jolly_boots.png');
+}
+.item-21 {
+    background-image: url('../img/weapon_steel_weeaboo.png');
+}
+.item-22 {
+    background-image: url('../img/accessory_backpack.png');
+}
+.item-23 {
+    background-image: url('../img/weapon_kitchen_knife.png');
+}
+.item-24 {
+    background-image: url('../img/chest_leather_doublet.png');
+}
+.item-25 {
+    background-image: url('../img/gloves_leather_gloves.png');
+}
+.item-26 {
+    background-image: url('../img/helm_leather_helmet.png');
+}
+.item-27 {
+    background-image: url('../img/legs_leather_pants.png');
+}
+.item-28 {
+    background-image: url('../img/boots_leather_shoes.png');
+}
+.item-29 {
+    background-image: url('../img/accessory_loot_sack.png');
+}
+.item-30 {
+    background-image: url('../img/consumable_small_health_potion.png');
+}
+.item-31 {
+    background-image: url('../img/tome_tome_of_basic_alchemy.png');
+}
+.item-32 {
+    background-image: url('../img/loot_gift_bag.png');
+}
+.item-33 {
+    background-image: url('../img/consumable_red_candy_cane.png');
+}
+.item-34 {
+    background-image: url('../img/consumable_blue_candy_cane.png');
+}
+.item-35 {
+    background-image: url('../img/resource_bolt.png');
+}
+.item-36 {
+    background-image: url('../img/consumable_bread.png');
+}
+.item-37 {
+    background-image: url('../img/resource_coarse_cog.png');
+}
+.item-38 {
+    background-image: url('../img/resource_fine_cog.png');
+}
+.item-39 {
+    background-image: url('../img/shield_wooden_shield.png');
+}
+.item-40 {
+    background-image: url('../img/tome_cook_book.png');
+}
+.item-41 {
+    background-image: url('../img/consumable_corn.png');
+}
+.item-42 {
+    background-image: url('../img/weapon_excalibur.png');
+}
+.item-43 {
+    background-image: url('../img/weapon_gungnir.png');
+}
+.item-44 {
+    background-image: url('../img/weapon_iron_short_sword.png');
+}
+.item-45 {
+    background-image: url('../img/weapon_mage_mincer.png');
+}
+.item-46 {
+    background-image: url('../img/resource_nut.png');
+}
+.item-47 {
+    background-image: url('../img/weapon_oak_staff.png');
+}
+.item-48 {
+    background-image: url('../img/weapon_puukko.png');
+}
+.item-49 {
+    background-image: url('../img/weapon_ragnarok.png');
+}
+.item-50 {
+    background-image: url('../img/shield_steel_round_shield.png');
+}
+.item-51 {
+    background-image: url('../img/amulet_stone_skin_amulet.png');
+}
+.item-52 {
+    background-image: url('../img/shield_studded_shield.png');
+}
+.item-53 {
+    background-image: url('../img/tome_tome_of_advanced_alchemy.png');
+}
+.item-54 {
+    background-image: url('../img/tome_tome_of_herbology.png');
+}
+.item-55 {
+    background-image: url('../img/resource_unrefined_amethyst.png');
+}
+.item-56 {
+    background-image: url('../img/resource_unrefined_ruby.png');
+}
+.item-57 {
+    background-image: url('../img/resource_unrefined_sapphire.png');
+}
+.item-58 {
+    background-image: url('../img/chest_jolly_suit.png');
+}
+.item-59 {
+    background-image: url('../img/helm_jolly_hat.png');
+}
+.item-60 {
+    background-image: url('../img/accessory_kings_robe.png');
+}
+.item-61 {
+    background-image: url('../img/helm_kings_crown.png');
+}
+.item-62 {
+    background-image: url('../img/resource_unrefined_emerald.png');
+}
+.item-63 {
+    background-image: url('../img/resource_unrefined_topaz.png');
+}
+.item-64 {
+    background-image: url('../img/resource_unrefined_diamond.png');
+}
+.item-65 {
+    background-image: url('../img/resource_powerful_acidic_solution.png');
+}
+.item-66 {
+    background-image: url('../img/resource_powerful_basic_solution.png');
+}
+.item-67 {
+    background-image: url('../img/resource_mana_crystal.png');
+}
+.item-68 {
+    background-image: url('../img/resource_mana_crystal_powder.png');
+}
+.item-69 {
+    background-image: url('../img/resource_red_pop_gel.png');
+}
+.item-70 {
+    background-image: url('../img/resource_green_pop_gel.png');
+}
+.item-71 {
+    background-image: url('../img/resource_red_mushroom_cap.png');
+}
+.item-72 {
+    background-image: url('../img/resource_brown_mushroom_cap.png');
+}
+.item-73 {
+    background-image: url('../img/resource_enchanted_crystal.png');
+}
+.item-74 {
+    background-image: url('../img/resource_enchanted_crystal_powder.png');
+}
+.item-75 {
+    background-image: url('../img/resource_perfect_emerald.png');
+}
+.item-76 {
+    background-image: url('../img/resource_perfect_ruby.png');
+}
+.item-77 {
+    background-image: url('../img/resource_perfect_topaz.png');
+}
+.item-78 {
+    background-image: url('../img/resource_perfect_diamond.png');
+}
+.item-79 {
+    background-image: url('../img/resource_perfect_sapphire.png');
+}
+.item-80 {
+    background-image: url('../img/resource_perfect_amethyst.png');
+}
+.item-81 {
+    background-image: url('../img/resource_red_lobster_claw.png');
+}
+.item-82 {
+    background-image: url('../img/resource_blue_lobster_claw.png');
+}
+.item-83 {
+    background-image: url('../img/resource_bat_wing.png');
+}
+.item-84 {
+    background-image: url('../img/resource_demon_bat_wing.png');
+}
+.item-85 {
+    background-image: url('../img/resource_kraken_tentacle.png');
+}
+.item-86 {
+    background-image: url('../img/resource_kobold_eye.png');
+}
+.item-87 {
+    background-image: url('../img/resource_giant_mantis_shrimp_eye.png');
+}
+.item-88 {
+    background-image: url('../img/resource_ammonite_shell.png');
+}
+.item-89 {
+    background-image: url('../img/resource_metal_plate.png');
+}
+.item-90 {
+    background-image: url('../img/resource_enchanted_bell.png');
+}
+.item-91 {
+    background-image: url('../img/resource_noisy_miner_beak.png');
+}
+.item-92 {
+    background-image: url('../img/resource_moon_sugar_tablet.png');
+}
+.item-93 {
+    background-image: url('../img/resource_fire_powder.png');
+}
+.item-94 {
+    background-image: url('../img/resource_ancient_sword_shard.png');
+}
+.item-95 {
+    background-image: url('../img/weapon_magical_gakgung_bow.png');
+}
+.item-96 {
+    background-image: url('../img/consumable_enchanted_red_ginseng.png');
+}
+.item-97 {
+    background-image: url('../img/weapon_psionic_blade.png');
+}
+.item-98 {
+    background-image: url('../img/weapon_goblin_bat.png');
+}
+.item-99 {
+    background-image: url('../img/consumable_hallabong_orange.png');
+}
+.item-100 {
+    background-image: url('../img/consumable_soju.png');
+}
+.item-101 {
+    background-image: url('../img/weapon_iron_dangpa.png');
+}
+.item-102 {
+    background-image: url('../img/chest_enchanted_dobok_top.png');
+}
+.item-103 {
+    background-image: url('../img/legs_enchanted_dobok_bottom.png');
+}
+.item-104 {
+    background-image: url('../img/accessory_enchanted_black_belt.png');
+}
+.item-105 {
+    background-image: url('../img/helm_korea_headband.png');
+}
+.item-106 {
+    background-image: url('../img/loot_lucky_bag.png');
+}
+.item-107 {
+    background-image: url('../img/consumable_enchanted_kimchi_jjigae.png');
+}
+.item-108 {
+    background-image: url('../img/consumable_galbi.png');
+}
+.item-109 {
+    background-image: url('../img/helm_corn_helmet.png');
+}
+.item-110 {
+    background-image: url('../img/resource_perfect_red_rose.png');
+}
+.item-111 {
+    background-image: url('../img/helm_samurai_kabuto.png');
+}
+.item-112 {
+    background-image: url('../img/chest_samurai_dou.png');
+}
+.item-113 {
+    background-image: url('../img/legs_samurai_haidate.png');
+}
+.item-114 {
+    background-image: url('../img/gloves_samurai_kote.png');
+}
+.item-115 {
+    background-image: url('../img/boots_samurai_kogake.png');
+}
+.item-116 {
+    background-image: url('../img/helm_ninja_hood.png');
+}
+.item-117 {
+    background-image: url('../img/chest_ninja_shirt.png');
+}
+.item-118 {
+    background-image: url('../img/legs_ninja_pants.png');
+}
+.item-119 {
+    background-image: url('../img/boots_ninja_tabi.png');
+}
+.item-120 {
+    background-image: url('../img/accessory_ninja_sash.png');
+}
+.item-121 {
+    background-image: url('../img/consumable_onigiri.png');
+}
+.item-122 {
+    background-image: url('../img/consumable_sushi.png');
+}
+.item-123 {
+    background-image: url('../img/consumable_sake.png');
+}
+.item-124 {
+    background-image: url('../img/charm_lucky_cat.png');
+}
+.item-125 {
+    background-image: url('../img/weapon_naginata.png');
+}
+.item-126 {
+    background-image: url('../img/weapon_jitte.png');
+}
+.item-127 {
+    background-image: url('../img/weapon_kusanagi.png');
+}
+.item-128 {
+    background-image: url('../img/weapon_muramasa.png');
+}
+.item-129 {
+    background-image: url('../img/weapon_kanemitsu.png');
+}
+.item-130 {
+    background-image: url('../img/weapon_masamune.png');
+}
+.item-131 {
+    background-image: url('../img/loot_himitsu_bako.png');
+}
+.item-132 {
+    background-image: url('../img/loot_gachapon.png');
+}
+.item-133 {
+    background-image: url('../img/loot_happy_yellow_gachapon.png');
+}
+.item-134 {
+    background-image: url('../img/weapon_takemitsu.png');
+}
+.item-135 {
+    background-image: url('../img/item_candle.png');
+}
+.item-136 {
+    background-image: url('../img/helm_stone_helmet.png');
+}
+.item-137 {
+    background-image: url('../img/chest_stone_chest_plate.png');
+}
+.item-138 {
+    background-image: url('../img/legs_stone_legs.png');
+}
+.item-139 {
+    background-image: url('../img/gloves_stone_gauntlets.png');
+}
+.item-140 {
+    background-image: url('../img/boots_stone_boots.png');
+}
+.item-141 {
+    background-image: url('../img/helm_candle_helmet.png');
+}
+.item-142 {
+    background-image: url("../img/resource_meaty_shamrock.png");
+}
+.item-143 {
+    background-image: url("../img/loot_red_envelope.png");
+}
+.item-144 {
+    background-image: url("../img/loot_jade_puzzle_ball.png");
+}
+.item-145 {
+    background-image: url("../img/charm_enchanted_dice.png");
+}
+.item-146 {
+    background-image: url("../img/weapon_rope_dart.png");
+}
+.item-147 {
+    background-image: url("../img/weapon_chain_whip.png");
+}
+.item-148 {
+    background-image: url("../img/weapon_meteor_hammer.png");
+}
+.item-149 {
+    background-image: url("../img/weapon_three-section_staff.png");
+}
+.item-150 {
+    background-image: url("../img/weapon_hook_sword.png");
+}
+.item-151 {
+    background-image: url("../img/consumable_baozi.png");
+}
+.item-152 {
+    background-image: url("../img/consumable_lotus_root.png");
+}
+.item-153 {
+    background-image: url("../img/consumable_baijiu.png");
+}
+.item-154 {
+    background-image: url("../img/consumable_magical_white_ginseng.png");
+}
+.item-155 {
+    background-image: url("../img/consumable_shark_fin.png");
+}
+.item-156 {
+    background-image: url("../img/loot_common_jade_box.png");
+}
+.item-157 {
+    background-image: url("../img/loot_uncommon_jade_box.png");
+}
+.item-158 {
+    background-image: url("../img/loot_rare_jade_chest.png");
+}
+.item-159 {
+    background-image: url("../img/loot_legendary_jade_chest.png");
+}
+.item-160 {
+    background-image: url("../img/loot_lotus_envelope.png");
+}
+.item-161 {
+    background-image: url("../img/loot_ornate_envelope.png");
+}
+.item-162 {
+    background-image: url("../img/loot_lucky_envelope.png");
+}
+.item-163 {
+    background-image: url("../img/weapon_hou_yi's_bow.png");
+}
+.item-164 {
+    background-image: url("../img/weapon_dagger_of_venom.png");
+}
+.item-165 {
+    background-image: url("../img/resource_enchanted_gunpowder.png");
+}
+.item-166 {
+    background-image: url("../img/resource_radiant_silk.png");
+}
+.item-167 {
+    background-image: url("../img/ring_phoenix_ring.png");
+}
+.item-168 {
+    background-image: url("../img/ring_jade_ring.png");
+}
+.item-169 {
+    background-image: url("../img/charm_jihan's_mystical_contract.png");
+}
+.item-170 {
+    background-image: url("../img/resource_unrefined_jade.png");
+}
+.item-171 {
+    background-image: url("../img/consumable_bai_zhu.png");
+}
+
+/*FALL EVENT*/
+.item-172 {
+    background-image: url('../panels/activity/events/halloween/img/loot_0.png');
+}
+
+.item-173 {
+    background-image: url('../panels/activity/events/halloween/img/loot_1.png');
+}
+
+.item-174 {
+    background-image: url('../panels/activity/events/halloween/img/loot_2.png');
+}
+
+.item-175 {
+    background-image: url('../panels/activity/events/halloween/img/loot_3.png');
+}
+
+.item-176 {
+    background-image: url('../panels/activity/events/halloween/img/loot_4.png');
+}
+
+.item-177 {
+    background-image: url('../panels/activity/events/halloween/img/loot_5.png');
+}
+
+.item-178 {
+    background-image: url('../panels/activity/events/halloween/img/loot_6.png');
+}
+
+.item-179 {
+    background-image: url('../panels/activity/events/halloween/img/loot_7.png');
+}
+
+.item-180 {
+    background-image: url('../panels/activity/events/halloween/img/loot_8.png');
+}
+.item-181 {
+    background-image: url('../panels/activity/events/halloween/img/loot_9.png');
+}
+.item-182 {
+    background-image: url('../panels/activity/events/halloween/img/loot_10.png');
+}
+.item-183 {
+    background-image: url('../panels/activity/events/halloween/img/loot_11.png');
+}
+/* FALL EVENT */
+
+/* NEXT-GEN ITEMS */
+.item-xgp {
+    background-image: url("../img/xgp.png");
+}
+
+.item-184 {
+    background-image: url("../img/nextgen/resource_bone.png");
+}
+.item-185 {
+    background-image: url("../img/nextgen/weapon_bone_club.png");
+}
+.item-186 {
+    background-image: url("../img/nextgen/weapon_bone_bow.png");
+}
+.item-187 {
+    background-image: url("../img/nextgen/ammo_bone_arrow.png");
+}
+.item-188 {
+    background-image: url("../img/nextgen/weapon_skeleton_wizard_staff.png");
+}
+.item-189 {
+    background-image: url("../img/nextgen/resource_rat_meat.png");
+}
+.item-190 {
+    background-image: url("../img/nextgen/resource_rat_tail.png");
+}
+
+/* INTEGRATED ITEMS */
+.item-300 {
+    background-image: url("../img/nextgen/consumable_avocado.png");
+}
