@@ -1,4 +1,28 @@
 function treasurebox(params, var1) {
+  let a = params.get('items')
+  var b = a.split(",").map(function(item) {
+      return parseInt(item, 10);
+  });
+  var c = a.split("[").map(function(item) {
+      return parseInt(item, 10);
+  });
+  var resarr=c.concat(b);
+  var itemList=[];
+  for(var i =0;i<resarr.length;i++){
+    if(resarr[i]){
+      itemList.push(resarr[i])
+    }
+  }
+
+  let itemHtml="";
+  for(var i =0;i<itemList.length;i++){
+    itemHtml+=`
+      <div data-times="${itemDB[itemList[i]-1].multiplier}" data-name="${itemDB[itemList[i]-1].name}">
+        <img src="images/ic/${itemDB[itemList[i]-1].imgName}.png" alt="" />
+      </div>
+    `
+  }
+
   return `
     <div class="herobox">
       <div class="sky-gradient sky-gradient-${params.get('time')}"></div>
@@ -9,27 +33,7 @@ function treasurebox(params, var1) {
     <img src="images/chest_idle.gif" alt="" class="treasurebx" />
         <div class="sliderouter">
             <div class="slickslider">
-                <div data-times="x32" data-name="Emerald Sword">
-                  <img src="images/ic/ic1.png" alt="" />
-                </div>
-                <div data-times="x32" data-name="Emerald Sword1">
-                  <img src="images/ic/ic2.png" alt="" />
-                </div>
-                <div data-times="x2" data-name="Emerald ">
-                  <img src="images/ic/ic3.png" alt="" />
-                </div>
-                <div data-times="x12" data-name="Sword">
-                  <img src="images/ic/ic4.png" alt="" />
-                </div>
-                <div data-times="x42" data-name="Emerald Sword2">
-                  <img src="images/ic/ic5.png" alt="" />
-                </div>
-                <div data-times="x82" data-name="Emerald Sword4">
-                  <img src="images/ic/ic6.png" alt="" />
-                </div>
-                <div data-times="x32" data-name="Emerald Sword6">
-                  <img src="images/ic/ic7.png" alt="" />
-                </div>
+                ${itemHtml}
             </div>
             <div class="sparkle">
                 
@@ -61,7 +65,6 @@ function startanimation() {
       $(".sparkle .content").empty().append($(".slick-center").attr("data-times")).fadeIn(300);
       $(".sparklename .content").hide();
       $(".sparklename .content").empty().append($(".slick-center").attr("data-name")).fadeIn(300);
-      console.log(slick);
     }
   );
 }
