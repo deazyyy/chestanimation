@@ -2,7 +2,12 @@ body{
     min-height: 100vh
 }
 
-
+img{
+  image-rendering: -moz-crisp-edges;
+  image-rendering: -webkit-crisp-edges;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+}
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700");
 * {
   margin: 0;
@@ -115,6 +120,10 @@ img {
   image-rendering: pixelated;
   image-rendering: crisp-edges;
 }
+.treasurebx{
+  transform: scale(0.7);
+  transform-origin: center;
+}
 .slickslider img {
   width: 16px;
   height: auto;
@@ -152,7 +161,9 @@ img {
     font-size: 14px;
     transition:all 0.3s ease;
     opacity: 0;
+    
 }
+
 .sliderouteranimated .sparklename{
     animation: sparklenameanim 600ms linear;
     animation-delay: 400ms;
@@ -165,7 +176,7 @@ img {
     margin: -13px 0 0px;
     position: relative;
     left: 7px;
-    top: -5px;
+    top: -3px;
     font-weight: bold;
     font-size: 14px;
     transition:all 0.3s ease;
@@ -217,7 +228,8 @@ img {
     position: absolute;
     z-index: -1;
     width: 100%;
-    height: 100%;
+    height: 32%;
+    top:0;
     cursor: pointer;
     transition: box-shadow 150ms, z-index 0ms;
   }

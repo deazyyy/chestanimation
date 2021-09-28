@@ -32,10 +32,11 @@ function treasurebox(params, var1) {
                 </div>
             </div>
             <div class="sparkle">
-                x32
+                
+                <div class="content"><span> x32</span></div>
             </div>
             <div class="sparklename">
-                Emerald Sword
+               <div class="content"><span> Emerald</span></div>
             </div>
         </div>
     </div></div>`;
@@ -56,8 +57,10 @@ function startanimation() {
   $(".slickslider").on(
     "afterChange",
     function (event, slick, currentSlide, nextSlide) {
-      $(".sparkle").html($(".slick-center").attr("data-times"));
-      $(".sparklename").html($(".slick-center").attr("data-name"));
+      $(".sparkle .content").hide();
+      $(".sparkle .content").empty().append($(".slick-center").attr("data-times")).fadeIn(300);
+      $(".sparklename .content").hide();
+      $(".sparklename .content").empty().append($(".slick-center").attr("data-name")).fadeIn(300);
       console.log(slick);
     }
   );
